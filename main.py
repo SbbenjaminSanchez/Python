@@ -210,8 +210,6 @@ def init():
   os.system ("clear")
   print('BIENVENIDO A TRES EN RAYA!')
   print ("")
-  print ('Por:       Benjamin S�nchez')
-  print ('Matricula: 2011-0534')
   print ("")
   print ("")
   print ("     **     ||            ||   **   **    ")
