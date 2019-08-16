@@ -2,7 +2,7 @@ import random, os
  
 
 #////////////////////////////////////////////////////
-# Esta funci�n imprime la tabla anterior
+# Esta funcion imprime la tabla anterior
 # "tabla" es una lista de 10 posiciones que representa la tabla (ignorar posicion 0)
 #////////////////////////////////////////////////////
 def tablero(tabla):
@@ -12,7 +12,7 @@ def tablero(tabla):
   B = '================='
   C = ' '
   print ('')
-  print ('EST�S JUGANDO TRES EN RAYA')
+  print ('ESTAS JUGANDO TRES EN RAYA')
   print ('')
   print (A.center(25, " "))
   print (C.center(8, " ") + tabla[7] + '  || ' + tabla[8] + ' || ' + tabla[9])
@@ -29,13 +29,13 @@ def tablero(tabla):
 #//////////////////////////////////////////////////// 
 
 #////////////////////////////////////////////////////
-#Esta funci�n devuelve True si el jugador quiere volver a jugar, de lo contrario
+#Esta funcion devuelve True si el jugador quiere volver a jugar, de lo contrario
 #Devuelve Falso
 #////////////////////////////////////////////////////
 def JuegoNuevo():
   print ('')
-  #print('�Quieres jugar de nuevo? (S o N)')
-  decision = input('�Quieres jugar de nuevo? (S o N) >>> ')
+  #print('Quieres jugar de nuevo? (S o N)')
+  decision = input('Quieres jugar de nuevo? (S o N) >>> ')
   #Lower() combierte la entrada en minuscula, si fue ingresada en mayuscula
   #Startswith devuelve verdadero si la entrada comienza con s
   return decision.lower().startswith('s')
@@ -70,8 +70,8 @@ def inputLetraUsuario():
   letra = ''
   while not (letra == 'X' or letra == 'O'):
     print ("-------------------------------")
-    #print ('Escoge tu s�mbolo (X - O) >>> ')
-    letra = input('Escoge tu s�mbolo (X - O) >>> ').upper()
+    #print ('Escoge tu simbolo (X - O) >>> ')
+    letra = input('Escoge tu simbolo (X - O) >>> ').upper()
   if letra == 'X':
     return ['X', 'O']
   else:
@@ -88,7 +88,7 @@ def dameMovimientoPC(tabla, letraPC):#Identificar con que simbolo jugar
   else:
     letraUsuario = 'X'
 
-  #Verifica si la computadora ganar en el pr�ximo movimiento.
+  #Verifica si la computadora ganar en el proximo movimiento.
   for i in range(1, 10):
     copy = dameTablero(tabla)
     if espacioLibre(copy, i): #Verificamos si hay espacio
@@ -97,7 +97,7 @@ def dameMovimientoPC(tabla, letraPC):#Identificar con que simbolo jugar
         return i
 
   #bloquear jugada del jugador si el jugador puede ganar
-  #Verifica si el jugador podr�a ganar pr�ximo movimiento y bloquear el juego
+  #Verifica si el jugador podria ganar proximo movimiento y bloquear el juego
   for i in range(1, 10):
     copy = dameTablero(tabla)
     if espacioLibre(copy, i):
@@ -172,8 +172,8 @@ def dameMoviemiento(tabla):
  
 
 #//////////////////////////////////////////////////// 
-#Devuelve un movimiento v�lido de la lista pasada en la tabla pasada.
-#Devuelve Ninguno si no hay un movimiento v�lido.
+#Devuelve un movimiento valido de la lista pasada en la tabla pasada.
+#Devuelve Ninguno si no hay un movimiento valido.
 #//////////////////////////////////////////////////// 
 def movimientoAleatorio(tabla, listaMovimientos):
   pisibleMovimiento = []
@@ -211,7 +211,7 @@ def init():
   print('BIENVENIDO A TRES EN RAYA!')
   print ("")
   print ('Por:       Benjamin S�nchez')
-  print ('Matr�cula: 2011-0534')
+  print ('Matricula: 2011-0534')
   print ("")
   print ("")
   print ("     **     ||            ||   **   **    ")
