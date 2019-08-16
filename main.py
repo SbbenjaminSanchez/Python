@@ -260,7 +260,7 @@ while True:
         hasGanado = 'GANASTE!'
         print (hasGanado.center(29, " "))
         juegoOn = False
-      else:                               #Si el jugador no gano
+      else:                              #Si el jugador no gano
         if tablaLlena(elTablero):         
           tablero(elTablero)
           empate = 'EMPATE!'
