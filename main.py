@@ -271,7 +271,7 @@ while True:
         else:
           retorno = 'computadora'
  
-    else: #RETORNO ES IGUAL A LA COMPUTADORA
+    else: #RETORNO ES IGUAL  A LA COMPUTADORA
       move = dameMovimientoPC(elTablero, letraPC) #retorna el movimiento de la pc
       movimiento(elTablero, letraPC, move) # grabar movimiento
  
